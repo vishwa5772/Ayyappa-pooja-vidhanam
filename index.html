@@ -317,6 +317,38 @@ body, .book, .book-container, .cover, .chapter, .chapter-inner,
   .anga-table td.mantra, .anga-table td.action,
   .sharanu-name, .sharanu-response { text-align:center!important; }
 }
+
+/* ===== Ayyappa devotional visual refinement ===== */
+:root{--wine:#32100d;--gold:#d6ad62;--paper:#fff9ec;--ink:#352319;--forest:#173d32;--forest-deep:#0c241f;--saffron:#b65c24}
+html{scroll-padding-top:92px}
+body{background:radial-gradient(ellipse at 50% -8%,rgba(213,170,89,.24),transparent 38%),radial-gradient(circle at 8% 42%,rgba(24,88,66,.32),transparent 28%),radial-gradient(circle at 92% 78%,rgba(24,88,66,.24),transparent 30%),linear-gradient(155deg,#102a24 0%,#24100d 48%,#10251f 100%);background-attachment:fixed}
+.top-garland{height:46px;border-bottom:1px solid #e0bc70;background-color:#28100d;background-image:radial-gradient(circle at 13px 16px,#f6d77f 0 4px,transparent 5px),radial-gradient(circle at 26px 27px,#a72e20 0 4px,transparent 5px),radial-gradient(circle at 39px 16px,#fff0c4 0 4px,transparent 5px);box-shadow:0 5px 22px #0008}
+.lamps{padding:14px 0 2px;color:#f7d98e;text-shadow:0 0 14px #e6a53b;letter-spacing:12px}
+.shell{max-width:1180px;padding-top:24px}
+.cover{position:relative;border:1px solid #e0bd72;outline:1px solid rgba(224,189,114,.45);outline-offset:6px;border-radius:20px;background:radial-gradient(ellipse at 50% 0%,rgba(203,151,66,.25),transparent 48%),linear-gradient(145deg,#102b25 0%,#3b1710 52%,#170b09 100%);box-shadow:0 24px 70px #0009,inset 0 0 45px #d3a24b12}
+.cover img{border:2px solid #e3c27d!important;border-radius:14px!important;box-shadow:0 0 0 6px #d6ad6222,0 18px 42px #0009!important}
+.cover h1{letter-spacing:.02em;text-shadow:0 3px 12px #000}.cover p{color:#f5dfb4}
+.swami{display:inline-block;padding:8px 24px;margin-top:18px;border-top:1px solid #d7b66d;border-bottom:1px solid #d7b66d;text-shadow:0 0 12px #e3ad4c66}
+.toolbar{border:1px solid #cda85f;border-radius:999px;background:rgba(17,45,37,.94);box-shadow:0 8px 24px #0005}
+.toolbar button{background:linear-gradient(145deg,#a85a27,#652515 70%);border:1px solid #e2c17c;box-shadow:inset 0 1px #ffffff35,0 3px 9px #0004;transition:transform .18s ease,filter .18s ease}
+.toolbar button:hover{transform:translateY(-2px);filter:brightness(1.12)}.toolbar input{accent-color:#e0b75e}
+.toc{background:linear-gradient(160deg,#fffaf0,#f3e5c7);border:1px solid #d4ad63;outline:1px solid #d4ad6344;outline-offset:3px;box-shadow:0 14px 34px #0006;scrollbar-color:#c49a51 #f8efd9}
+.toc h2{padding:8px 4px 12px;border-bottom:1px solid #d9bc80;letter-spacing:.04em}
+.toc a{border-bottom:1px solid #ead9b8;border-radius:7px;padding:9px 10px;margin:2px 0;line-height:1.65;transition:background .18s ease,color .18s ease,padding .18s ease}
+.toc a:hover,.toc a.active{color:#fff7e4;background:linear-gradient(100deg,#315d4b,#6a321d);padding-left:14px}
+.chapter{background:radial-gradient(ellipse at 50% 0%,#fffef8 0%,transparent 55%),linear-gradient(145deg,#fffdf5 0%,#fff8e9 55%,#f3e3c2 100%);border:5px double #c99b4d;border-radius:16px;box-shadow:inset 0 0 45px #b47d2b12,0 18px 40px #0006}
+.chapter:before,.chapter:after{color:#b98736;text-shadow:0 1px #fff}
+.section-title{color:#672719;border-top:1px solid #c89b50;border-bottom:1px solid #c89b50;position:relative}
+.section-title:before{content:"❁";display:block;color:#b78a3d;font-size:17px;line-height:1.2;margin-bottom:4px}
+.verse{color:#342116;text-shadow:0 1px rgba(255,255,255,.6)}.ornament{color:#b98736}.page-mark{letter-spacing:.04em}
+.footer{margin:10px auto 0;padding:24px 12px 8px;border-top:1px solid #c59a50;color:#f6dca2;text-shadow:0 2px 8px #0008}
+.footer strong{font-size:clamp(20px,3vw,26px);color:#ffe8ad}
+.hidden{display:none!important}
+#backToTop{position:fixed;right:18px;bottom:18px;z-index:20;width:48px;height:48px;border-radius:50%;border:1px solid #e3c27c;color:#fff2ca;background:linear-gradient(145deg,#a85a27,#4b1b12);box-shadow:0 6px 20px #0007;font-size:21px;cursor:pointer;opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .2s ease,transform .2s ease}
+#backToTop.visible{opacity:1;pointer-events:auto;transform:translateY(0)}:focus-visible{outline:3px solid #e6bb61;outline-offset:3px}
+@media(max-width:780px){.shell{padding:16px 12px 48px}.cover{padding:20px 14px 24px;border-radius:16px}.cover img{border-radius:10px!important}.toolbar{border-radius:16px;justify-content:center;gap:8px}.toolbar button{font-size:13px;padding:8px 11px}.toolbar input{order:3;width:62%;max-width:none}.layout{gap:14px}.toc{max-height:300px;border-radius:14px}.chapter{border-width:4px;padding:28px 16px;min-height:0;margin-bottom:18px}.section-title{margin-top:8px}.verse{line-height:2}#backToTop{right:12px;bottom:12px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
+
 </style></head><body>
 <div class="top-garland"></div><div class="lamps">🪔　🌼　🪔　🌼　🪔</div>
 <main class="shell"><header class="cover">
@@ -433,9 +465,18 @@ body, .book, .book-container, .cover, .chapter, .chapter-inner,
 <p class="verse">శబరీ పర్వతే పూజ్యం శాంతమానన సంస్థితం భక్తాఘ పాప హంతారం అయ్యప్పం ప్రణమామ్యహమ్ ||</p>
 <p class="verse">ఇతి శ్రీ భూతనాథ పంచరత్నం।</p>
 <p class="verse">ఓం స్వామియే శరణం అయ్యప్ప!</p></div><div class="page-mark">— స్వామియే శరణం అయ్యప్ప —</div></article></section></div>
-<footer class="footer">🌼 🪔 🌼<strong>స్వామియే శరణం అయ్యప్ప</strong>🌼 🪔 🌼</footer></main>
+<button id="backToTop" aria-label="పైకి వెళ్లండి" title="పైకి వెళ్లండి" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button><footer class="footer">🌼 🪔 🌼<strong>స్వామియే శరణం అయ్యప్ప</strong>🌼 🪔 🌼</footer></main>
 <script>
 const bar=document.getElementById('progress'),pct=document.getElementById('pct');
 function updateProgress(){const max=document.documentElement.scrollHeight-innerHeight;const v=max>0?Math.round(scrollY/max*100):100;bar.value=v;pct.textContent=v+'%'}
 addEventListener('scroll',updateProgress);bar.addEventListener('input',()=>{const max=document.documentElement.scrollHeight-innerHeight;scrollTo(0,max*bar.value/100)});
+const backTop=document.getElementById('backToTop');
+function updateBackTop(){backTop.classList.toggle('visible',scrollY>500)}
+addEventListener('scroll',updateBackTop,{passive:true});
+const chapters=[...document.querySelectorAll('.chapter[id]')];
+const tocLinks=[...document.querySelectorAll('.toc a')];
+if('IntersectionObserver' in window){
+ const observer=new IntersectionObserver(entries=>{entries.forEach(entry=>{if(entry.isIntersecting){tocLinks.forEach(link=>link.classList.toggle('active',link.getAttribute('href')==='#'+entry.target.id));}});},{rootMargin:'-18% 0px -68% 0px'});
+ chapters.forEach(chapter=>observer.observe(chapter));
+}
 </script></body></html>

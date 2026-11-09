@@ -491,6 +491,57 @@ body{background:radial-gradient(ellipse at 50% -15%,#30483a 0,#101714 45%,#080b0
   .chapter-inner table { width: 100% !important; margin-inline: auto !important; }
 }
 
+
+
+/* Keep every Sharanaghosha response together on one line on both pages */
+#chapter-9 .sharanughosha-pair,
+#chapter-9-continued .sharanughosha-pair {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+  align-items: baseline !important;
+  justify-content: center !important;
+  gap: 8px !important;
+  width: 100%;
+  max-width: 100%;
+  margin: 0.4em auto !important;
+  text-align: center !important;
+}
+#chapter-9 .sharanughosha-pair .sharanu-name,
+#chapter-9-continued .sharanughosha-pair .sharanu-name {
+  flex: 0 1 auto !important;
+  min-width: 0;
+  white-space: normal !important;
+  overflow-wrap: anywhere;
+  text-align: center !important;
+}
+#chapter-9 .sharanughosha-pair .sharanu-response,
+#chapter-9-continued .sharanughosha-pair .sharanu-response {
+  flex: 0 0 auto !important;
+  display: inline-block !important;
+  white-space: nowrap !important;
+  word-break: keep-all !important;
+  overflow-wrap: normal !important;
+  text-align: center !important;
+}
+@media (max-width: 780px) {
+  #chapter-9 .columns-table,
+  #chapter-9-continued .columns-table {
+    table-layout: fixed !important;
+  }
+  #chapter-9 .columns-table td,
+  #chapter-9-continued .columns-table td {
+    width: 50% !important;
+    padding-left: 4px !important;
+    padding-right: 4px !important;
+  }
+  #chapter-9 .sharanughosha-pair,
+  #chapter-9-continued .sharanughosha-pair {
+    gap: 4px !important;
+    font-size: 13px !important;
+  }
+}
+
 </style>
 <style id="premium-homepage-refresh">
 :root{--home-gold:#d7a743;--home-cream:#f4e6c6;--home-maroon:#5a1713}

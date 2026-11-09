@@ -794,6 +794,61 @@ input:not([type="range"]),textarea,select { text-align:center !important; }
     overflow-wrap: anywhere !important;
   }
 }
+
+/* Ayyappa Ashtottaram: mobile-only single-column correction */
+@media screen and (max-width: 780px) {
+  #chapter-8 .columns-table,
+  #chapter-8-continued .columns-table {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 10px auto !important;
+    table-layout: auto !important;
+    border-collapse: collapse !important;
+  }
+  #chapter-8 .columns-table tbody,
+  #chapter-8-continued .columns-table tbody,
+  #chapter-8 .columns-table tr,
+  #chapter-8-continued .columns-table tr {
+    display: block !important;
+    width: 100% !important;
+  }
+  #chapter-8 .columns-table td,
+  #chapter-8-continued .columns-table td {
+    display: block !important;
+    width: 100% !important;
+    padding: 0 !important;
+    border: 0 !important;
+    text-align: center !important;
+  }
+  #chapter-8 .chapter-inner > .listline,
+  #chapter-8-continued .chapter-inner > .listline {
+    display: block !important;
+    width: 100% !important;
+    margin: 8px auto 16px !important;
+    padding: 0 3px !important;
+    text-align: center !important;
+    font-size: 13.5px !important;
+    line-height: 1.85 !important;
+    overflow-wrap: anywhere !important;
+  }
+  #chapter-8 .columns-table .listline,
+  #chapter-8-continued .columns-table .listline {
+    display: block !important;
+    width: 100% !important;
+    margin: 5px auto !important;
+    padding: 0 3px !important;
+    text-align: center !important;
+    font-size: 13.5px !important;
+    line-height: 1.8 !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+  #chapter-8 .chapter-inner,
+  #chapter-8-continued .chapter-inner {
+    text-align: center !important;
+  }
+}
 </style>
 </head><body>
 <div class="top-garland"></div><div class="lamps">🪔　🌼　🪔　🌼　🪔</div>

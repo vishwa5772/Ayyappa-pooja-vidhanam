@@ -435,6 +435,47 @@ body{background:radial-gradient(ellipse at 50% -15%,#30483a 0,#101714 45%,#080b0
 @media(max-width:380px){.home-section-grid{grid-template-columns:1fr}.home-hero-copy h1{font-size:36px}}
 /* Tatvamasi Mitra Mandali 18-step chant */
 .steps-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin:22px auto}.step-card{padding:16px 12px;border:1px solid #c99a49;border-radius:12px;background:linear-gradient(145deg,#fffdf5,#f2dfb8);box-shadow:inset 0 0 0 3px #c58a2d16,0 5px 14px #603b1717}.step-card h3{text-align:center;color:#762817;margin:3px 0 10px;font-size:18px}.step-card .verse{font-size:15px;line-height:1.9;margin:5px auto}.step-number{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:linear-gradient(145deg,#8a3a1c,#43160e);border:1px solid #d8ad5a;color:#ffe7a1;font-weight:700}.step-closing{margin:26px auto 4px;padding:20px 12px;border:2px double #c58a2d;border-radius:12px;background:linear-gradient(145deg,#fff9e9,#f0ddb7)}.step-closing .verse{font-weight:600;color:#67221a}@media(max-width:640px){.steps-grid{grid-template-columns:1fr}.step-card{padding:15px 10px}}
+
+/* Final site-wide typography and alignment pass */
+body, main, header, footer, nav, section, article, aside,
+h1,h2,h3,h4,h5,h6,p,small,strong,em,label,figcaption,
+a,button,.site-brand,.site-links,.toc,.toc a,.toolbar,
+.home-hero-copy,.home-section-heading,.home-section-card,
+.home-closing-banner,.closing-copy,.chapter,.chapter-inner,
+.chapter-inner p,.chapter-inner li,.verse,.listline,
+.section-title,.page-mark,.footer,.step-card,.step-closing,
+.sharanughosha-pair,.anga-pair,.columns-table,
+.columns-table td,.columns-table th,table,thead,tbody,tr,td,th {
+  text-align:center !important;
+}
+.chapter-inner,.chapter-inner p,.chapter-inner li,
+.home-hero-copy,.closing-copy,.step-card,.step-closing {
+  margin-left:auto;
+  margin-right:auto;
+}
+.chapter-inner ol,.chapter-inner ul {
+  list-style-position:inside;
+  padding-left:0;
+  margin-left:auto;
+  margin-right:auto;
+}
+.chapter-inner li { padding-left:0; }
+.columns-table { width:100%; margin-left:auto; margin-right:auto; }
+.columns-table td,.columns-table th { vertical-align:middle; }
+.site-nav,.site-links,.toolbar,.hero-actions { justify-content:center; }
+.site-brand { justify-content:center; }
+.toc a { padding-left:8px !important; padding-right:8px !important; }
+input:not([type="range"]),textarea,select { text-align:center !important; }
+@media(max-width:780px) {
+  .site-nav { align-items:center !important; }
+  .site-links,.toolbar { justify-content:center !important; }
+}
+@media print {
+  body,header,footer,nav,section,article,h1,h2,h3,p,li,td,th {
+    text-align:center !important;
+  }
+}
+
 </style>
 </head><body>
 <div class="top-garland"></div><div class="lamps">🪔　🌼　🪔　🌼　🪔</div>

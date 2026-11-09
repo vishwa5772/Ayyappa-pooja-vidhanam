@@ -667,6 +667,133 @@ input:not([type="range"]),textarea,select { text-align:center !important; }
     align-items: center !important;
   }
 }
+
+/* Targeted mobile repair for the three layouts that were still breaking. */
+@media screen and (max-width: 780px) {
+  /* Sharanughosha: stack the two desktop columns into one readable list. */
+  #chapter-9 .columns-table,
+  #chapter-9-continued .columns-table {
+    display: block !important;
+    width: 100% !important;
+    table-layout: auto !important;
+    border: 0 !important;
+  }
+  #chapter-9 .columns-table tbody,
+  #chapter-9-continued .columns-table tbody,
+  #chapter-9 .columns-table tr,
+  #chapter-9-continued .columns-table tr {
+    display: block !important;
+    width: 100% !important;
+  }
+  #chapter-9 .columns-table td,
+  #chapter-9-continued .columns-table td {
+    display: block !important;
+    width: 100% !important;
+    padding: 0 !important;
+    border: 0 !important;
+  }
+  #chapter-9 .sharanughosha-pair,
+  #chapter-9-continued .sharanughosha-pair {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: center !important;
+    align-items: baseline !important;
+    gap: 2px 6px !important;
+    width: 100% !important;
+    margin: 7px auto !important;
+    padding: 0 2px !important;
+    font-size: 13px !important;
+    line-height: 1.65 !important;
+    text-align: center !important;
+  }
+  #chapter-9 .sharanu-name,
+  #chapter-9-continued .sharanu-name {
+    flex: 0 1 auto !important;
+    min-width: 0 !important;
+    text-align: center !important;
+    overflow-wrap: anywhere !important;
+  }
+  #chapter-9 .sharanu-response,
+  #chapter-9-continued .sharanu-response {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+    text-align: center !important;
+  }
+
+  /* Anga Pooja: give mantra and offering their own centered lines.
+     This prevents long Telugu mantras being squeezed into half-width cells. */
+  #chapter-3 .anga-table {
+    display: block !important;
+    width: 100% !important;
+    margin: 8px auto !important;
+    table-layout: auto !important;
+  }
+  #chapter-3 .anga-table tbody,
+  #chapter-3 .anga-table tr {
+    display: block !important;
+    width: 100% !important;
+  }
+  #chapter-3 .anga-table tr {
+    padding: 7px 3px !important;
+    border-bottom: 1px solid #ead9b8 !important;
+  }
+  #chapter-3 .anga-table td,
+  #chapter-3 .anga-table td.mantra,
+  #chapter-3 .anga-table td.action {
+    display: block !important;
+    width: 100% !important;
+    padding: 2px 0 !important;
+    text-align: center !important;
+    font-size: 13px !important;
+    line-height: 1.7 !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  /* Ashtottara namavali: replace cramped side-by-side columns with one
+     centered continuous column on phones; override legacy left alignment. */
+  #chapter-4 .columns-table,
+  #chapter-4-continued .columns-table,
+  #chapter-6 .columns-table,
+  #chapter-6-continued .columns-table {
+    display: block !important;
+    width: 100% !important;
+    table-layout: auto !important;
+    margin: 8px auto !important;
+  }
+  #chapter-4 .columns-table tbody,
+  #chapter-4-continued .columns-table tbody,
+  #chapter-6 .columns-table tbody,
+  #chapter-6-continued .columns-table tbody,
+  #chapter-4 .columns-table tr,
+  #chapter-4-continued .columns-table tr,
+  #chapter-6 .columns-table tr,
+  #chapter-6-continued .columns-table tr {
+    display: block !important;
+    width: 100% !important;
+  }
+  #chapter-4 .columns-table td,
+  #chapter-4-continued .columns-table td,
+  #chapter-6 .columns-table td,
+  #chapter-6-continued .columns-table td {
+    display: block !important;
+    width: 100% !important;
+    padding: 0 !important;
+    border: 0 !important;
+    text-align: center !important;
+  }
+  #chapter-4 .listline,
+  #chapter-4-continued .listline,
+  #chapter-6 .listline,
+  #chapter-6-continued .listline {
+    width: 100% !important;
+    margin: 5px auto !important;
+    padding: 0 2px !important;
+    text-align: center !important;
+    font-size: 13.5px !important;
+    line-height: 1.75 !important;
+    overflow-wrap: anywhere !important;
+  }
+}
 </style>
 </head><body>
 <div class="top-garland"></div><div class="lamps">🪔　🌼　🪔　🌼　🪔</div>

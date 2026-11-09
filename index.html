@@ -622,6 +622,51 @@ input:not([type="range"]),textarea,select { text-align:center !important; }
   }
 }
 
+
+/* Mobile alignment hardening: apply one consistent center rule to every chapter.
+   This intentionally comes last so older chapter/table-specific rules cannot
+   leave selected pages or cells left/right aligned on narrow screens. */
+@media screen and (max-width: 780px) {
+  body .chapter .chapter-inner,
+  body .chapter .chapter-inner * {
+    text-align: center !important;
+  }
+  body .chapter .chapter-inner p,
+  body .chapter .chapter-inner h1,
+  body .chapter .chapter-inner h2,
+  body .chapter .chapter-inner h3,
+  body .chapter .chapter-inner h4,
+  body .chapter .chapter-inner li,
+  body .chapter .chapter-inner .verse,
+  body .chapter .chapter-inner .listline,
+  body .chapter .chapter-inner .page-mark {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  body .chapter .chapter-inner ol,
+  body .chapter .chapter-inner ul {
+    width: fit-content;
+    max-width: 100%;
+    padding-left: 0 !important;
+    list-style-position: inside !important;
+  }
+  body .chapter .chapter-inner table {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+  body .chapter .chapter-inner td,
+  body .chapter .chapter-inner th {
+    text-align: center !important;
+    vertical-align: middle !important;
+  }
+  body .chapter .chapter-inner .sharanughosha-pair,
+  body .chapter .chapter-inner .anga-pair,
+  body .chapter .chapter-inner .step-card {
+    justify-content: center !important;
+    align-items: center !important;
+  }
+}
 </style>
 </head><body>
 <div class="top-garland"></div><div class="lamps">🪔　🌼　🪔　🌼　🪔</div>

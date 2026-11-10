@@ -849,6 +849,37 @@ input:not([type="range"]),textarea,select { text-align:center !important; }
     text-align: center !important;
   }
 }
+
+/* Paired sloka/name columns: first column left, second column right. */
+.columns-table { width:100%!important; table-layout:fixed!important; border-collapse:collapse!important; }
+.columns-table td { width:50%!important; vertical-align:top!important; }
+.columns-table td:first-child,
+.columns-table td:first-child .listline { text-align:left!important; }
+.columns-table td:nth-child(2),
+.columns-table td:nth-child(2) .listline { text-align:right!important; }
+
+/* Keep both paired columns side by side on mobile as well. */
+@media screen and (max-width:640px) {
+  .columns-table { display:table!important; width:100%!important; table-layout:fixed!important; }
+  .columns-table tbody { display:table-row-group!important; width:100%!important; }
+  .columns-table tr { display:table-row!important; width:100%!important; }
+  .columns-table td {
+    display:table-cell!important; width:50%!important; min-width:0!important;
+    padding:0 5px!important; border:0!important; vertical-align:top!important;
+  }
+  .columns-table td + td {
+    border-top:0!important; border-left:1px solid #e8d4ad!important;
+    margin-top:0!important; padding-top:0!important;
+  }
+  .columns-table td:first-child,
+  .columns-table td:first-child .listline { text-align:left!important; }
+  .columns-table td:nth-child(2),
+  .columns-table td:nth-child(2) .listline { text-align:right!important; }
+  .columns-table td .listline {
+    font-size:clamp(10px,2.8vw,13px)!important;
+    line-height:1.65!important; overflow-wrap:anywhere!important;
+  }
+}
 </style>
 </head><body>
 <div class="top-garland"></div><div class="lamps">🪔　🌼　🪔　🌼　🪔</div>
